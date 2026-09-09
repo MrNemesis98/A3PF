@@ -1,0 +1,49 @@
+{
+  "model": "quadratic_discriminant_analysis",
+  "model_key": "qda",
+  "experiment": "voiceless_only_fine_tuning",
+  "analysis_scope": "voiceless_only_fine_tuning",
+  "operation_mode": "stored_model_validation_evaluation",
+  "train_enabled": false,
+  "validation_enabled": true,
+  "test_enabled": false,
+  "source_model_bundle": "C:\\Users\\tillp\\Documents\\Masters_Project\\models\\07___Fine_Tuning_voiceless_only\\voiceless_only_fine_tuning_stage_01\\qda_2000Hz_balance000_cfg001\\validation_quadratic_discriminant_analysis_2000Hz_balance000_cfg001_voiceless_only_fine_tuning_2026-09-03_08-03-53_model.joblib",
+  "source_model_run_id": "2026-09-03_08-03-53",
+  "row_filter": "voicing_label == voiceless",
+  "prediction_target": "place_label",
+  "place_bandpass_low_hz": 2000,
+  "balance_strength": 0.0,
+  "fitted_model_parameters": {
+    "covariance_estimator": null,
+    "priors": [
+      0.27101822161069533,
+      0.4273379901953594,
+      0.3016437881939453
+    ],
+    "reg_param": 0.0,
+    "shrinkage": null,
+    "solver": "svd",
+    "store_covariance": false,
+    "tol": 0.0001
+  },
+  "evaluation_experiment_folder": "validation_2000",
+  "output_experiment_folder": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\C___classification\\voiceless_only_fine_tuning_stage_01\\validation\\qda_2000Hz_balance000_final",
+  "evaluation_subset": "validation",
+  "evaluation_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\validation_2000\\validation_features.csv",
+  "place_feature_columns": [
+    "cog_hz",
+    "spread_hz",
+    "skewness",
+    "kurtosis"
+  ],
+  "feature_scaling": "Loaded unchanged from the locked model bundle",
+  "evaluation_original_rows": 73690,
+  "evaluation_valid_rows_before_filter": 73690,
+  "evaluation_voiceless_rows": 49452,
+  "evaluation_removed_invalid_or_voiced_rows": 24238,
+  "python_version": "3.11.15",
+  "pandas_version": "3.0.3",
+  "scikit_learn_version": "1.9.0",
+  "experiment_run_id": "2026-09-03_08-39-58",
+  "run_id": "2026-09-03_08-40-01"
+}

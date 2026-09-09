@@ -1,0 +1,76 @@
+{
+  "model": "quadratic_discriminant_analysis",
+  "model_key": "qda",
+  "experiment": "voicing_fine_tuning",
+  "analysis_scope": "voicing_fine_tuning",
+  "row_filter": "none",
+  "prediction_target": "voicing_label",
+  "source_place_bandpass_low_hz": 2000,
+  "source_frequency_role": "canonical input only; not a voicing parameter",
+  "balance_strength": 0.0,
+  "balance_method": "interpolated_class_priors",
+  "empirical_class_priors": {
+    "voiced": 0.3229858940084294,
+    "voiceless": 0.6770141059915705
+  },
+  "uniform_class_priors": {
+    "voiced": 0.5,
+    "voiceless": 0.5
+  },
+  "applied_class_priors": {
+    "voiced": 0.3229858940084294,
+    "voiceless": 0.6770141059915705
+  },
+  "parameter_configuration_id": "cfg004",
+  "configured_model_parameters": {
+    "reg_param": 0.2
+  },
+  "configured_parameter_space": {
+    "parameters": {},
+    "parameter_grid": {
+      "reg_param": [
+        0.0,
+        0.05,
+        0.1,
+        0.2
+      ]
+    }
+  },
+  "fitted_model_parameters": {
+    "covariance_estimator": null,
+    "priors": [
+      0.3229858940084294,
+      0.6770141059915705
+    ],
+    "reg_param": 0.2,
+    "shrinkage": null,
+    "solver": "svd",
+    "store_covariance": false,
+    "tol": 0.0001
+  },
+  "training_experiment_folder": "training_2000",
+  "evaluation_experiment_folder": "validation_2000",
+  "output_experiment_folder": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\C___classification\\voicing_fine_tuning_stage_01\\validation\\qda_balance000_cfg004",
+  "training_subset": "training",
+  "evaluation_subset": "validation",
+  "training_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\training_2000\\training_features.csv",
+  "evaluation_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\validation_2000\\validation_features.csv",
+  "voicing_feature_columns": [
+    "duration_s",
+    "voiced_fraction",
+    "low_total_intensity_ratio_db",
+    "mean_hnr_db"
+  ],
+  "feature_scaling": "StandardScaler fitted on training voicing features",
+  "training_original_rows": 503474,
+  "training_retained_rows": 503474,
+  "training_removed_rows": 0,
+  "evaluation_original_rows": 73690,
+  "evaluation_retained_rows": 73690,
+  "evaluation_removed_rows": 0,
+  "python_version": "3.11.15",
+  "pandas_version": "3.0.3",
+  "scikit_learn_version": "1.9.0",
+  "experiment_run_id": "2026-09-04_11-55-21",
+  "run_id": "2026-09-04_11-57-50"
+}

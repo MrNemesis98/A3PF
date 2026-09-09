@@ -1,0 +1,42 @@
+{
+  "model": "quadratic_discriminant_analysis",
+  "experiment": "variableBandPass",
+  "place_bandpass_low_hz": 1000,
+  "training_experiment_folder": "training_1000",
+  "evaluation_experiment_folder": "validation_1000",
+  "training_subset": "training",
+  "evaluation_subset": "validation",
+  "training_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\training_1000\\training_features.csv",
+  "evaluation_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\validation_1000\\validation_features.csv",
+  "place_feature_columns": [
+    "cog_hz",
+    "spread_hz",
+    "skewness",
+    "kurtosis"
+  ],
+  "voicing_feature_columns": [
+    "duration_s",
+    "voiced_fraction",
+    "low_total_intensity_ratio_db",
+    "mean_hnr_db"
+  ],
+  "qda_parameters": {
+    "covariance_estimator": null,
+    "priors": null,
+    "reg_param": 0.0,
+    "shrinkage": null,
+    "solver": "svd",
+    "store_covariance": false,
+    "tol": 0.0001
+  },
+  "training_original_rows": 503474,
+  "training_retained_rows": 503474,
+  "training_removed_rows": 0,
+  "evaluation_original_rows": 73690,
+  "evaluation_retained_rows": 73690,
+  "evaluation_removed_rows": 0,
+  "python_version": "3.11.15",
+  "pandas_version": "3.0.3",
+  "scikit_learn_version": "1.9.0",
+  "run_id": "2026-08-18_09-01-03"
+}

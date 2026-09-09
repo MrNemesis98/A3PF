@@ -1,0 +1,104 @@
+{
+  "model": "random_forest",
+  "model_key": "rf",
+  "experiment": "voicing_fine_tuning",
+  "analysis_scope": "voicing_fine_tuning",
+  "row_filter": "none",
+  "prediction_target": "voicing_label",
+  "source_place_bandpass_low_hz": 2000,
+  "source_frequency_role": "canonical input only; not a voicing parameter",
+  "balance_strength": 0.0,
+  "balance_method": "interpolated_class_weights",
+  "empirical_class_priors": {
+    "voiced": 0.3229858940084294,
+    "voiceless": 0.6770141059915705
+  },
+  "fully_balanced_class_weights": {
+    "voiced": 1.548055222457953,
+    "voiceless": 0.7385370490437395
+  },
+  "applied_class_weights": {
+    "voiced": 1.0,
+    "voiceless": 1.0
+  },
+  "parameter_configuration_id": "cfg006",
+  "configured_model_parameters": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "configured_parameter_space": {
+    "parameters": {
+      "n_estimators": [
+        100,
+        300
+      ],
+      "max_depth": [
+        null,
+        20
+      ],
+      "min_samples_split": 2,
+      "min_samples_leaf": [
+        1,
+        5
+      ],
+      "max_features": "sqrt",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "parameter_grid": {}
+  },
+  "fitted_model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": {
+      "voiced": 1.0,
+      "voiceless": 1.0
+    },
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 5,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 300,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "training_experiment_folder": "training_2000",
+  "evaluation_experiment_folder": "validation_2000",
+  "output_experiment_folder": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\C___classification\\voicing_fine_tuning_stage_01\\validation\\rf_balance000_cfg006",
+  "training_subset": "training",
+  "evaluation_subset": "validation",
+  "training_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\training_2000\\training_features.csv",
+  "evaluation_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\validation_2000\\validation_features.csv",
+  "voicing_feature_columns": [
+    "duration_s",
+    "voiced_fraction",
+    "low_total_intensity_ratio_db",
+    "mean_hnr_db"
+  ],
+  "feature_scaling": "none",
+  "training_original_rows": 503474,
+  "training_retained_rows": 503474,
+  "training_removed_rows": 0,
+  "evaluation_original_rows": 73690,
+  "evaluation_retained_rows": 73690,
+  "evaluation_removed_rows": 0,
+  "python_version": "3.11.15",
+  "pandas_version": "3.0.3",
+  "scikit_learn_version": "1.9.0",
+  "experiment_run_id": "2026-09-04_11-55-21",
+  "run_id": "2026-09-04_12-04-57"
+}

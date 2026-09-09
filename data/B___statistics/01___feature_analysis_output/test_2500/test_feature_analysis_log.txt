@@ -1,0 +1,36 @@
+Feature analysis
+================
+Created: 2026-08-11 11:20:20
+Dataset subset: test
+Place band-pass lower cutoff (Hz): 2500
+Experiment folder: test_2500
+Input file: C:\Users\tillp\Documents\Masters_Project\data\A___preprocessing\05___feature_extraction_output\test_2500\test_features.csv
+Output directory: C:\Users\tillp\Documents\Masters_Project\data\B___statistics\01___feature_analysis_output\test_2500
+
+Input rows: 62916
+Fricative types in summary: 6
+
+Class counts:
+  dental_voiceless: 17156
+  dental_voiced: 11439
+  retroflex_voiceless: 12787
+  retroflex_voiced: 8900
+  alveolo-palatal_voiceless: 11788
+  alveolo-palatal_voiced: 846
+
+Calculated statistics:
+  P10
+  Median
+  P90
+
+Place features:
+  cog_hz
+  spread_hz
+  skewness
+  kurtosis
+
+Voicing features:
+  duration_s
+  voiced_fraction
+  low_total_intensity_ratio_db
+  mean_hnr_db

@@ -1,0 +1,50 @@
+{
+  "model": "quadratic_discriminant_analysis",
+  "experiment": "balanced_voicing",
+  "analysis_scope": "balanced_voicing",
+  "row_filter": "none",
+  "prediction_target": "voicing_label",
+  "source_place_bandpass_low_hz": 2000,
+  "source_frequency_role": "canonical input only; not a voicing parameter",
+  "training_experiment_folder": "training_2000",
+  "evaluation_experiment_folder": "validation_2000",
+  "output_experiment_folder": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\C___classification\\03___QDA\\validation_balanced_voicing",
+  "training_subset": "training",
+  "evaluation_subset": "validation",
+  "training_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\training_2000\\training_features.csv",
+  "evaluation_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\validation_2000\\validation_features.csv",
+  "voicing_feature_columns": [
+    "duration_s",
+    "voiced_fraction",
+    "low_total_intensity_ratio_db",
+    "mean_hnr_db"
+  ],
+  "feature_scaling": "StandardScaler fitted on training voicing features",
+  "balancing": "full",
+  "class_priors": {
+    "voiced": 0.5,
+    "voiceless": 0.5
+  },
+  "model_parameters": {
+    "covariance_estimator": null,
+    "priors": [
+      0.5,
+      0.5
+    ],
+    "reg_param": 0.0,
+    "shrinkage": null,
+    "solver": "svd",
+    "store_covariance": false,
+    "tol": 0.0001
+  },
+  "training_original_rows": 503474,
+  "training_retained_rows": 503474,
+  "training_removed_rows": 0,
+  "evaluation_original_rows": 73690,
+  "evaluation_retained_rows": 73690,
+  "evaluation_removed_rows": 0,
+  "python_version": "3.11.15",
+  "pandas_version": "3.0.3",
+  "scikit_learn_version": "1.9.0",
+  "run_id": "2026-09-03_09-51-05"
+}

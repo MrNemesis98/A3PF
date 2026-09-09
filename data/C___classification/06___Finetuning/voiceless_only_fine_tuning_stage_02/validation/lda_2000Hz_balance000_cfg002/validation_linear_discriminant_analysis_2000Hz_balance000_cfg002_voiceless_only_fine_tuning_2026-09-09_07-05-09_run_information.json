@@ -1,0 +1,98 @@
+{
+  "model": "linear_discriminant_analysis",
+  "model_key": "lda",
+  "experiment": "voiceless_only_fine_tuning",
+  "analysis_scope": "voiceless_only_fine_tuning",
+  "row_filter": "voicing_label == voiceless",
+  "prediction_target": "place_label",
+  "place_bandpass_low_hz": 2000,
+  "balance_strength": 0.0,
+  "balance_method": "interpolated_class_priors",
+  "empirical_class_priors": {
+    "alveolo-palatal": 0.27101822161069533,
+    "dental": 0.4273379901953594,
+    "retroflex": 0.3016437881939453
+  },
+  "uniform_class_priors": {
+    "alveolo-palatal": 0.3333333333333333,
+    "dental": 0.3333333333333333,
+    "retroflex": 0.3333333333333333
+  },
+  "applied_class_priors": {
+    "alveolo-palatal": 0.27101822161069533,
+    "dental": 0.4273379901953594,
+    "retroflex": 0.3016437881939453
+  },
+  "parameter_configuration_id": "cfg002",
+  "configured_model_parameters": {
+    "solver": "lsqr",
+    "shrinkage": null,
+    "tol": 0.0001
+  },
+  "configured_parameter_space": {
+    "parameters": {},
+    "parameter_grid": [
+      {
+        "solver": "svd",
+        "shrinkage": null,
+        "tol": 0.0001
+      },
+      {
+        "solver": "lsqr",
+        "shrinkage": [
+          null,
+          "auto"
+        ],
+        "tol": 0.0001
+      },
+      {
+        "solver": "eigen",
+        "shrinkage": [
+          null,
+          "auto"
+        ],
+        "tol": 0.0001
+      }
+    ]
+  },
+  "fitted_model_parameters": {
+    "covariance_estimator": null,
+    "n_components": null,
+    "priors": [
+      0.27101822161069533,
+      0.4273379901953594,
+      0.3016437881939453
+    ],
+    "shrinkage": null,
+    "solver": "lsqr",
+    "store_covariance": false,
+    "tol": 0.0001
+  },
+  "training_experiment_folder": "training_2000",
+  "evaluation_experiment_folder": "validation_2000",
+  "output_experiment_folder": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\C___classification\\voiceless_only_fine_tuning_stage_02\\validation\\lda_2000Hz_balance000_cfg002",
+  "training_subset": "training",
+  "evaluation_subset": "validation",
+  "training_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\training_2000\\training_features.csv",
+  "evaluation_input": "C:\\Users\\tillp\\Documents\\Masters_Project\\data\\A___preprocessing\\05___feature_extraction_output\\validation_2000\\validation_features.csv",
+  "place_feature_columns": [
+    "cog_hz",
+    "spread_hz",
+    "skewness",
+    "kurtosis"
+  ],
+  "feature_scaling": "StandardScaler fitted on voiceless training place features",
+  "training_original_rows": 503474,
+  "training_valid_rows_before_filter": 503474,
+  "training_voiceless_rows": 340859,
+  "training_removed_invalid_or_voiced_rows": 162615,
+  "evaluation_original_rows": 73690,
+  "evaluation_valid_rows_before_filter": 73690,
+  "evaluation_voiceless_rows": 49452,
+  "evaluation_removed_invalid_or_voiced_rows": 24238,
+  "python_version": "3.11.15",
+  "pandas_version": "3.0.3",
+  "scikit_learn_version": "1.9.0",
+  "experiment_run_id": "2026-09-09_07-05-02",
+  "run_id": "2026-09-09_07-05-09"
+}

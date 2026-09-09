@@ -1,0 +1,28 @@
+Feature analysis
+================
+Created: 2026-07-27 11:08:28
+Dataset subset: validation
+Input file: C:\Users\tillp\Documents\Masters_Project\data\A___preprocessing\05___feature_extraction_output\validation\validation_features.csv
+Output directory: C:\Users\tillp\Documents\Masters_Project\data\B___statistics\01___feature_analysis_output\validation
+
+Input rows: 73690
+Fricative types in summary: 6
+
+Class counts:
+  dental_voiceless: 22517
+  dental_voiced: 13935
+  retroflex_voiceless: 13895
+  retroflex_voiced: 9348
+  alveolo-palatal_voiceless: 13040
+  alveolo-palatal_voiced: 955
+
+Calculated statistics:
+  P10
+  Median
+  P90
+
+Features:
+  cog_hz
+  spread_hz
+  skewness
+  kurtosis
