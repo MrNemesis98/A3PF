@@ -25,7 +25,7 @@
 # Project roots
 # -----------------------------------------------------------------------------
 
-projectRoot$ = "C:/Users/tillp/Documents/Masters_Project"
+projectRoot$ = "<project_root>"   ; enter the your root to the project here!
 
 srcDir$ = projectRoot$ + "/src"
 dataDir$ = projectRoot$ + "/data"
