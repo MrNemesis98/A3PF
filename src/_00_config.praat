@@ -25,7 +25,7 @@
 # Project roots
 # -----------------------------------------------------------------------------
 
-projectRoot$ = "<project_root>"   ; enter the your root to the project here!
+projectRoot$ = "<project_root>"   ; enter your root to the project here!
 
 srcDir$ = projectRoot$ + "/src"
 dataDir$ = projectRoot$ + "/data"
